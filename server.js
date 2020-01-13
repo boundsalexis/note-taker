@@ -15,7 +15,7 @@ app.use(express.json());
 
 ////////////////ROUTING///////////////////
 
-// require("./public/routes/apiRoutes")(app);
+require("./public/routes/apiRoutes")(app);
 require("./public/routes/htmlRoutes")(app);
 
 ///////////////LISTENER aka LAUNCHER///////////

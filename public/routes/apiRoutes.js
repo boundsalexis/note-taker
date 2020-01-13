@@ -10,16 +10,15 @@ module.exports = function(app){
 
 
     app.get("/api/notes", function(req, res) {
-        res.sendFile(path.join())
+        res.sendFile(path.join(__dirname,"../../db/db.json"))
+    });
+    app.post("/api/notes", function(req, res) {
+        fs.readFile("../../db/db.json", function(err, data){
+        let json = JSON.parse(data);
+        req.body.journal = Date.now();
+        json.push(req.body);
+        fs.writeFile("../../db/db.json", JSON.stringify(json));
+        }) 
+    });
 
-
-
-    // fs.readFile("db/db.json", (err,data) => {
-    //     if (err) throw err;
-    //     let object = JSON.parse(data);
-    //     // return object;
-    //     res.JSON(object);
-    // })
-   
-    })
 }
