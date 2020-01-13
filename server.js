@@ -10,12 +10,12 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 // sets our server to handle parsing data
-app.use(express.urlencoded({ extened: true }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 ////////////////ROUTING///////////////////
 
-require("./public/routes/apiRoutes")(app);
+// require("./public/routes/apiRoutes")(app);
 require("./public/routes/htmlRoutes")(app);
 
 ///////////////LISTENER aka LAUNCHER///////////
