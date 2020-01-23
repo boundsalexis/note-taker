@@ -3,6 +3,7 @@ Take notes, and never lose them
 
 # links
 > [GitHub Repository](https://github.com/boundsalexis/note-taker)
+> [live link](https://mysterious-waters-03191.herokuapp.com/notes)
 
 ## Images
 ![Final Product](3m9mjs.gif)
